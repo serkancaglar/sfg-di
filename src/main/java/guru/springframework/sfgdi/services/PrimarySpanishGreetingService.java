@@ -4,15 +4,15 @@ import lombok.AllArgsConstructor;
 
 /**
  * @author Serkan Caglar
- * 3/29/2020 12:47 PM
+ * 4/5/2020 8:59 PM
  */
 @AllArgsConstructor
-public class PrimaryGreetingService implements GreetingService {
+public class PrimarySpanishGreetingService implements GreetingService {
 
     private final GreetingRepository greetingRepository;
 
     @Override
     public String sayGreeting() {
-        return greetingRepository.getEnglishGreeting();
+        return greetingRepository.getSpanishGreeting();
     }
 }
